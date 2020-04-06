@@ -1,8 +1,6 @@
 const Sequelize = require("sequelize");
-const DB_NAME = "sql7331647";
-const USER_NAME = "sql7331647";
-const PASSWORD = "Yx_r3DvCm8qfA$f";
-const sequelize = new Sequelize(DB_NAME, USER_NAME, PASSWORD, {
+const keys = require("../keys/keys");
+const sequelize = new Sequelize(keys.DB_NAME, keys.USER_NAME, keys.PASSWORD, {
   host: "db4free.net",
   dialect: "mysql",
 });
